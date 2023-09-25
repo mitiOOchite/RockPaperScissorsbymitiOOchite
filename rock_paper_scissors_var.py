@@ -1,0 +1,6 @@
+ROCK = 'Rock'
+SCISSORS = 'Scissors'
+PAPER = 'Paper'
+DRAW = 'Draw!'
+WIN = 'You Win!'
+LOSE = 'You Lose!'

@@ -1,14 +1,12 @@
+import rock_paper_scissors_var
 def player_attribute():
-    rock = 'Rock'
-    paper = 'Paper'
-    scissors = 'Scissors'
     player_move = input('Choose [r]ock, [p]aper, [s]cissors: ')
     if player_move.lower() == 'r':
-        player_move = rock
+        player_move = rock_paper_scissors_var.ROCK
     elif player_move.lower() == 'p':
-        player_move = paper
+        player_move = rock_paper_scissors_var.PAPER
     elif player_move.lower() == 's':
-        player_move = scissors
+        player_move = rock_paper_scissors_var.SCISSORS
     else:
         raise SystemExit('Invalid Input. Please choose [r], [p] or [s]. Try again...')
     return player_move
