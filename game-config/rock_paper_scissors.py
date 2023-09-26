@@ -11,15 +11,15 @@ def rock_paper_scissors():
     var.win_count = 0
     i = var.NUMBER_OF_GAMES
     while i <= var.NUMBER_OF_GAMES:
-        if i == 0:
+        if i < 0:
             break
         if var.NUMBER_OF_GAMES == 3 and var.player_win_count == 2:
             winner = var.USER
             var.win_count = var.player_win_count
             break
         elif var.NUMBER_OF_GAMES == 3 and var.computer_win_count == 2:
-            winner = "Computer"
             var.win_count = var.computer_win_count
+            winner = "Computer"
             break
         if var.NUMBER_OF_GAMES == 5 and var.player_win_count == 3:
             winner = var.USER
