@@ -2,9 +2,45 @@ from player_moves import player_attribute
 from computer_moves import computer_attribute
 import rock_paper_scissors_var as var
 
+var.NUMBER_OF_GAMES
+var.computer_win_count = 0
+var.player_win_count = 0
+var.win_count = 0
 i = var.NUMBER_OF_GAMES
 while i <= var.NUMBER_OF_GAMES:
-    if i == 0:
+    if i < 0:
+        break
+    if var.NUMBER_OF_GAMES == 3 and var.player_win_count == 2:
+        winner = var.USER
+        var.win_count = var.player_win_count
+        break
+    elif var.NUMBER_OF_GAMES == 3 and var.computer_win_count == 2:
+        var.win_count = var.computer_win_count
+        winner = "Computer"
+        break
+    if var.NUMBER_OF_GAMES == 5 and var.player_win_count == 3:
+        winner = var.USER
+        var.win_count = var.player_win_count
+        break
+    elif var.NUMBER_OF_GAMES == 5 and var.computer_win_count == 3:
+        winner = "Computer"
+        var.win_count = var.computer_win_count
+        break
+    if var.NUMBER_OF_GAMES == 7 and var.player_win_count == 4:
+        winner = var.USER
+        var.win_count = var.player_win_count
+        break
+    elif var.NUMBER_OF_GAMES == 7 and var.computer_win_count == 4:
+        winner = "Computer"
+        var.win_count = var.computer_win_count
+        break
+    if var.NUMBER_OF_GAMES == 9 and var.player_win_count == 5:
+        winner = var.USER
+        var.win_count = var.player_win_count
+        break
+    elif var.NUMBER_OF_GAMES == 9 and var.computer_win_count == 5:
+        winner = "Computer"
+        var.win_count = var.computer_win_count
         break
     player_move = player_attribute()
     computer_move = computer_attribute()
@@ -30,13 +66,4 @@ while i <= var.NUMBER_OF_GAMES:
         var.player_win_count += 1
         i -= 1
     print(win_or_lose)
-    if var.NUMBER_OF_GAMES == 3 and var.player_win_count == 2:
-        winner = "User"
-        var.win_count = var.player_win_count
-        break
-    elif var.NUMBER_OF_GAMES == 3 and var.computer_win_count == 2:
-        winner = "Computer"
-        var.win_count = var.computer_win_count
-        break
-
-print(f'The winner is {winner} with {var.win_count}')
+print(f'The winner is {winner} with {var.win_count} wins!')
