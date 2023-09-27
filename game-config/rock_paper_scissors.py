@@ -19,14 +19,14 @@ def rock_paper_scissors():
             break
         elif var.NUMBER_OF_GAMES == 3 and var.computer_win_count == 2:
             var.win_count = var.computer_win_count
-            winner = "Computer"
+            winner = var.COMPUTER
             break
         if var.NUMBER_OF_GAMES == 5 and var.player_win_count == 3:
             winner = var.USER
             var.win_count = var.player_win_count
             break
         elif var.NUMBER_OF_GAMES == 5 and var.computer_win_count == 3:
-            winner = "Computer"
+            winner = var.COMPUTER
             var.win_count = var.computer_win_count
             break
         if var.NUMBER_OF_GAMES == 7 and var.player_win_count == 4:
@@ -34,7 +34,7 @@ def rock_paper_scissors():
             var.win_count = var.player_win_count
             break
         elif var.NUMBER_OF_GAMES == 7 and var.computer_win_count == 4:
-            winner = "Computer"
+            winner = var.COMPUTER
             var.win_count = var.computer_win_count
             break
         if var.NUMBER_OF_GAMES == 9 and var.player_win_count == 5:
@@ -42,7 +42,7 @@ def rock_paper_scissors():
             var.win_count = var.player_win_count
             break
         elif var.NUMBER_OF_GAMES == 9 and var.computer_win_count == 5:
-            winner = "Computer"
+            winner = var.COMPUTER
             var.win_count = var.computer_win_count
             break
         player_move = player_attribute()

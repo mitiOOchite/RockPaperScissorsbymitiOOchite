@@ -5,6 +5,7 @@ DRAW = 'This round was a draw, it won\'t be counted!'
 WIN = 'You win this round!'
 LOSE = 'You lose this round!'
 USER = input('Please choose a username: ')
+COMPUTER = 'Computer'
 NUMBER_OF_GAMES = int(input('You are able to choose to play [3], [5], [7] or [9] games: '))
 computer_win_count = 0 # win count stores the number of games won by the computer
 player_win_count = 0 # stored the number of games won by the player
