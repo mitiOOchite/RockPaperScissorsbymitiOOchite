@@ -7,3 +7,5 @@ elif NUMBER_OF_GAMES == 7:
     print(f'You chose to play best out of {NUMBER_OF_GAMES}, this means that the first one to reach 4 wins takes the prize!')
 elif NUMBER_OF_GAMES == 9:
     print(f'You chose to play best out of {NUMBER_OF_GAMES}, this means that the first one to reach 5 wins takes the prize!')
+else:
+    raise SystemExit('Invalid Input. Try again')
